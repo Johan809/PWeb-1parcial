@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Primer Parcial</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <script
+      src="https://kit.fontawesome.com/ca95e6a565.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-6 text-center">
+        <h1>Primer Parcial</h1>
+        <hr />
+        <!--Buttons-->
+        <div
+          class="btn-toolbar mb-3 form-center"
+          role="toolbar"
+          aria-label="Toolbar with button groups"
+        >
+          <div>
+            <div class="form-row">
+              <div class="col">
+                <input
+                  id="n1"
+                  type="number"
+                  class="form-control"
+                  placeholder="1er Numero"
+                />
+              </div>
+              <div class="col">
+                <input
+                  id="n2"
+                  type="number"
+                  class="form-control"
+                  placeholder="2do Numero"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="btn-group mr-2 space-form"
+            role="group"
+            aria-label="First group"
+          >
+            <button
+              onclick="Calculate(1)"
+              type="button"
+              class="btn btn-dark text-white"
+            >
+              <i class="fas fa-plus"></i>
+            </button>
+            <button
+              onclick="Calculate(2)"
+              type="button"
+              class="btn btn-dark text-white"
+            >
+              <i class="fas fa-minus"></i>
+            </button>
+            <button
+              onclick="Calculate(3)"
+              type="button"
+              class="btn btn-dark text-white"
+            >
+              <i class="fas fa-times"></i>
+            </button>
+            <button
+              onclick="Calculate(4)"
+              type="button"
+              class="btn btn-dark text-white"
+            >
+              <i class="fas fa-divide"></i>
+            </button>
+          </div>
+        </div>
+        <!--End of buttons-->
+        <!--Result goes here-->
+        <div class="col-md-3 float-right result-space">
+          <input
+            class="form-control form-control-sm"
+            type="text"
+            id="result"
+            placeholder="Resultado..."
+            readonly
+          />
+        </div>
+        <!--History-->
+        <table class="table table-sm table-space table-bordered">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col" class="text-left">Historial</th>
+              <th>
+                <button
+                  onclick="ClearAll()"
+                  class="btn btn-danger btn-sm float-right"
+                >
+                  <i class="fa fa-trash"></i> Limpiar
+                </button>
+              </th>
+            </tr>
+          </thead>
+          <tbody id="tBody"></tbody>
+        </table>
+        <!--End History-->
+      </div>
+    </div>
+  </body>
+
+  <script src="./assets/js/app.js"></script>
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+  ></script>
+  <!--JQuery para el bootstrap de js-->
+  <script src="./assets/js/bootstrap.min.js"></script>
+</html>

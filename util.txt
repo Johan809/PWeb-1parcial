@@ -1,0 +1,13 @@
+iconos:
+suma = <i class="fas fa-plus"></i>
+resta = <i class="fas fa-minus"></i>
+multip = <i class="fas fa-times"></i>
+division = <i class="fas fa-divide"></i>
+eliminar = <i class="fa fa-trash"></i>
+
+signos:
+multip = × 
+division = ÷
+
+link dek vid: 
+https://youtu.be/JcDe1tWOnPQ
